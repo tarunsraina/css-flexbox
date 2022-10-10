@@ -1,0 +1,60 @@
+:root {
+    font-size: 4vmin;
+    font-family: sans-serif;
+    height: 100%;
+  }
+
+  body{
+    background-color: #eaea84;
+  }
+  
+  .puzzle {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #eaea84;
+  }
+  
+  .puzzle .word {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .puzzle .word .letter {
+    width: 2em;
+    height: 2em;
+    margin: 0.05em;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    order: 2;
+    bottom: 50%;
+  }
+  
+  .puzzle .word .letter:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .puzzle .word .letter:last-child {
+    margin-bottom: auto;
+  }
+  
+  .puzzle .word .pivot {
+    background-color: #75a987;
+  }
+  
+  .puzzle .word .pivot,
+  .puzzle .word .pivot ~ .letter {
+    order: 1;
+    top: 50%;
+  }
+  .other {
+    padding: 0.4em;
+    background-color: #7994ca;
+  }

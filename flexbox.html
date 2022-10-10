@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flexbox.css">
+    <title>Flexbox demo</title>
+</head>
+<body>
+    <h1>Flex Containers</h1>
+    <hr>
+
+<h2>Flex container (direction:row)</h2>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+<hr>
+
+<h2>Flex container (direction:column)</h2>
+
+
+<div class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+
+  <hr>
+
+<h2>Flex container (direction:column-reverse)</h2>
+
+
+<div class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+
+  <hr>
+
+  <h2>Flex container (direction:row-reverse)</h2>
+  
+  
+  <div class="flex-container4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
+
+    <hr>
+
+    <h2>Order attribute</h2>
+
+
+
+    <div class="flex-container5">
+        <div style="order:2">1</div>
+        <div style="order:1">2</div>
+        <div style="order:3">3</div>  
+      </div>
+      
+      <hr>
+
+      <h3>Flex-grow attribute</h3>
+
+      <div class="flex-container6">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+      </div>
+
+      <hr>
+
+      <h3>Flex-shrink attribute</h3>
+
+      <P>Not letting the 3rd element to shrink as much as others</P>
+
+      <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        <div>5</div>
+        <div>4</div>
+        
+        
+       
+      </div>
+
+      <hr>
+
+      <h3>Flex-basis attribute</h3>
+      <p>Fourth element is set to 200px</p>
+      <p>No changes made to justify content , start by default</p>
+
+      <div class="flex-container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="flex-basis: 200px">4</div>
+      </div>
+
+      <hr>
+
+      <h3>flex attribute</h3>
+
+      <p>Third item is not growable, not shrinkable, and with an initial length of 200 pixels</p>
+      <p>justify content is set to end</p>
+      <div class="flex-container9">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+      </div>
+
+      <hr>
+
+      <h3>align-self property</h3>
+      <p>Third element aligns to <b>center</b> itself overriding other aligning</p>
+      <p>justify content is made as centre</p>
+
+
+      <div class="flex-container10">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+      </div>
+
+      <h3>align : flex-end</h3>
+      <p>justify content is made as centre</p>
+
+      <div class="flex-container10">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self:flex-end">3</div>
+        <div>4</div>
+      </div>
+
+
+      <h3>align : flex-start</h3>
+      <p>justify content is made as centre</p>
+
+      <div class="flex-container10">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self:flex-start">3</div>
+        <div>4</div>
+      </div>
+
+      <hr>
+
+      <div class="flex-container11">
+        <div style="align-self:flex-start">1</div>
+        <div style="align-self:flex-end">2</div>
+        <div style="align-self:flex-start">3</div>
+        <div style="align-self:flex-end">4</div>
+        <div style="align-self:flex-start">5</div>
+        <div style="align-self:flex-end">6</div>
+        <div style="align-self:flex-start">7</div>
+        <div style="align-self:flex-end">8</div>
+        <div style="align-self:flex-start">9</div>
+        <div style="align-self:flex-end">10</div>
+      </div>
+</body>
+</html>
